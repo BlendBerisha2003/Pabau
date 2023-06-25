@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pabau Challenge</title>
+</head>
+<style>
+body{
+  margin: 20em;
+  font: 1em sans-serif;
+  background-color: beige;
+  color: black;
+}
+
+form{
+display: flex;
+justify-content: center;
+
+}
+button{
+  display: flex;
+  margin: 1em auto;
+  border: 2px solid black;
+  border-radius: 1em;
+  padding: 0.3em;
+  width: 30%;
+  justify-content: center;
+  background-color: antiquewhite;
+  font-size: 1.2em;
+}
+
+.selected-values {
+display: flex;
+justify-content: center;
+font-size: 2em;
+  }
+
+button{
+  cursor: pointer;
+}
+button:hover{
+  width:25em
+}
+
+</style>
+<body>
+  <form id="checkbox-form">
+    <label><input type="checkbox" value="Internship"> Internship</label><br>
+    <label><input type="checkbox" value="Pabau"> Pabau</label><br>
+    <label><input type="checkbox" value="Employment"> Employment</label><br>
+    <label><input type="checkbox" value="Career"> Career</label><br>
+    <br>
+
+  </form>
+  <button id="shuffle-button" type="button">Shuffle Values</button>
+  <button id="change-button" type="button">Change Values</button>
+  <button id="show-button" type="button">Show Selected Values</button>
+  <div id="selected-values"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
